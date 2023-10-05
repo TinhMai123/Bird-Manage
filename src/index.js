@@ -11,22 +11,27 @@ import {
 
 import Home from './Pages/Home';
 import BirdManagement from './Pages/BirdManagement';
+import BreedingManagement from './Pages/BreedingManagement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/BirdManagement",
-    element: <BirdManagement/>,
+    element: <BirdManagement />,
   },
+  {
+    path: "/BreedingManagement",
+    element: <BreedingManagement />
+  }
 ]);
 root.render(
   <RouterProvider router={router} />
 
-  
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -4,8 +4,8 @@ import Navbar from '../Components/Navbar'
 const birdManagement = () => {
   return (
     <>
-    <Navbar></Navbar>
-        <h1 className='text-center'>asdasdasda</h1>
+      <Navbar />
+      <h1 className='text-center'>Bird Management</h1>
     </>
 
   )

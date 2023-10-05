@@ -13,34 +13,34 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="BreedingManagement">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/BirdManagement">Quản lí chim</NavDropdown.Item>
+            <NavDropdown title="Management" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/BirdManagement">Bird </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Cage
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Meal</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Staff
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
         <div className='dropdown text-end'>
-        <a href="#" className="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
-        </a>
-        <ul className="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-          <li><a className="dropdown-item" href="#">New project...</a></li>
-          <li><a className="dropdown-item" href="#">Settings</a></li>
-          <li><a className="dropdown-item" href="#">Profile</a></li>
-          <li><hr className="dropdown-divider" /></li>
-          <li><a className="dropdown-item" href="#">Sign out</a></li>
-        </ul>
+          <a href="#" className="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
+          </a>
+          <ul className="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a className="dropdown-item" href="#">New project...</a></li>
+            <li><a className="dropdown-item" href="#">Settings</a></li>
+            <li><a className="dropdown-item" href="#">Profile</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="#">Sign out</a></li>
+          </ul>
         </div>
-        </Container>
+      </Container>
 
     </Navbar>
 

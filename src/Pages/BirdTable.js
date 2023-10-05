@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import fetchAllUser from '../Services/UserService';
 import ReactPaginate from 'react-paginate';
-import Footer from '../Components/Footer';
+
 
 // TableUsers
 const BirdProfile = (props) => {
@@ -21,7 +21,7 @@ const BirdProfile = (props) => {
     const getUsers = async (page) => {
         let res = await fetchAllUser(page);
         if (res && res.data) {
-            console.log("............",res);
+            console.log("............", res);
             setTotalBirds(res.total)
             setlistBirds(res.data)
             setTotalPage(res.total_pages)
@@ -29,14 +29,15 @@ const BirdProfile = (props) => {
     }
 
     const handlePageClick = (event) => {
-        console.log( ">....." ,event)
+        console.log(">.....", event)
         getUsers(event.selected + 1);
     }
     return (
         <>
-            <Navbar />
+
+
             <Container>
-        
+
                 <div className="card mb-4">
                     <div className="card-header">
                         <i className="fas fa-table me-1"></i>
@@ -56,7 +57,7 @@ const BirdProfile = (props) => {
                                 listBirds.map((item, index) => {
                                     return (
                                         <tr key={`users-${index}`}>
-                                           <a href='https://www.youtube.com/watch?v=sGQSz22U8VM'> <td>{item.id}</td> </a>
+                                            <a href='https://www.youtube.com/watch?v=sGQSz22U8VM'> <td>{item.id}</td> </a>
                                             <td>{item.email}</td>
                                             <td>{item.first_name}</td>
                                             <td>{item.last_name}</td>
@@ -74,7 +75,7 @@ const BirdProfile = (props) => {
                         onPageChange={handlePageClick}
                         pageRangeDisplayed={1}
                         pageCount={totalPgae}
-                        previousLabel="< previous"                      
+                        previousLabel="< previous"
                         pageClassName='page-item'
                         pageLinkClassName='page-link'
                         previousClassName='page-item'
@@ -88,7 +89,8 @@ const BirdProfile = (props) => {
                     />
                 </div>
             </Container>
-            <Footer/>
+
+
         </>
 
     )
