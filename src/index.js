@@ -12,6 +12,7 @@ import {
 import Home from './Pages/Home';
 import BirdManagement from './Pages/BirdManagement';
 import BreedingManagement from './Pages/BreedingManagement';
+import MealManagement from './Pages/MealManagement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/BirdManagement",
     element: <BirdManagement />,
+  },
+  {
+    path: "/MealManagement",
+    element: <MealManagement />,
   },
   {
     path: "/BreedingManagement",

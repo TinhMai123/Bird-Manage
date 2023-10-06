@@ -2,10 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './Navbar.css'
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary my-navbar">
       <Container>
         <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/376385728_815563143583844_2473185658508874788_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=0x35yDeMoGQAX9Z-CZ-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTKOAj4K6AEj7_wf_wpUgc6nQfZIPyUJYSD83DNWdffVA&oe=6527EDE3"
           alt="logo" width="50" height="60" />
@@ -20,7 +21,7 @@ function BasicExample() {
               <NavDropdown.Item href="#action/3.2">
                 Cage
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Meal</NavDropdown.Item>
+              <NavDropdown.Item href="/MealManagement">Meal</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Staff
@@ -33,7 +34,7 @@ function BasicExample() {
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
           </a>
           <ul className="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-            <li><a className="dropdown-item" href="#">New project...</a></li>
+            <li><a className="dropdown-item" href="#">New project</a></li>
             <li><a className="dropdown-item" href="#">Settings</a></li>
             <li><a className="dropdown-item" href="#">Profile</a></li>
             <li><hr className="dropdown-divider" /></li>
