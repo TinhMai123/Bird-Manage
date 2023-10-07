@@ -36,7 +36,7 @@ export default function Combining() {
             xAxis={[
                 {
                     id: 'years',
-                    data: [2010, 2011, 2012, 2013, 2014],
+                    data: [20, 17, 21, 12, 15],
                     scaleType: 'band',
                     valueFormatter: (value) => value.toString(),
                 },

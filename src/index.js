@@ -13,6 +13,7 @@ import Home from './Pages/Home';
 import BirdManagement from './Pages/BirdManagement';
 import BreedingManagement from './Pages/BreedingManagement';
 import MealManagement from './Pages/MealManagement';
+import CageProfile from './Pages/CageProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/BreedingManagement",
     element: <BreedingManagement />
+  },
+  {
+    path: "/CageProfile",
+    element: <CageProfile />
   }
 ]);
 root.render(

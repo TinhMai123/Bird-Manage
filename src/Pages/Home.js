@@ -8,7 +8,6 @@ import HomeBox from '../Components/HomeBox';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faEgg } from '@fortawesome/free-solid-svg-icons'
 import { faCrow } from '@fortawesome/free-solid-svg-icons'
 import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons'
@@ -16,6 +15,7 @@ import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import Pie from '../Components/Pie';
 import Chart from '../Components/Chart';
 import Sidebar from '../Components/SideBar';
+import Footer from '../Components/Footer';
 
 
 
@@ -29,7 +29,7 @@ const Home = () => {
 
         <div className=' w-100'>
           <div className='container'>
-            <h1 className='text-center my-3'>Welcome home page</h1>
+            <h1 className='text-center my-3'>Welcome Dashboard</h1>
 
             <div className='bg-light'>
               {/* HELLO SCRIPT */}
@@ -81,11 +81,10 @@ const Home = () => {
 
 
           </div>{/* End of Container */}
+
+
         </div>
-      </div>
-
-
-
+      </div><Footer />
 
 
     </div>
