@@ -17,7 +17,7 @@ function BasicExample() {
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Management" id="basic-nav-dropdown">
               <NavDropdown.Item href="/BirdManagement">Bird </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/CageManagement">
                 Cage
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Meal</NavDropdown.Item>
